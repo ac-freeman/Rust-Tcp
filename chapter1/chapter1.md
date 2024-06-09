@@ -81,7 +81,7 @@ valid_lft forever preferred_lft forever
 
 Next, we activate the network interface by executing `sudo ip link set up dev tun0`.
 
-Now we're all set to test. If you recall,  earlier we said we will be dealing with raw network packets in out user space program that the kernel sends us, well lets see it in action. Go ahead and run the command below to ping our virtual network interface or any subnet within it [while still executing our binary].
+Now we're all set to test. If you recall,  earlier we said we will be dealing with raw network packets in our user space program that the kernel sends us. Well, let's see it in action. Go ahead and run the command below to ping our virtual network interface or any subnet within it [while still executing our binary].
 
 ```
 ping -I tun0 192.168.0.2 
